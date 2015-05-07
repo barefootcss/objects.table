@@ -1,0 +1,141 @@
+// 
+// Declarations  
+// ========================================================================== 
+
+//
+// Features:
+//
+
+$bare-table--cells:				  false !default;
+$bare-table--rows:				  false !default;
+$bare-table--fixed:				  false !default;
+$bare-table--zebra:				  false !default;
+
+// 
+// Defaults:
+// 
+
+$bare-table-border-width: 		    1px !default;
+$bare-table-border-style: 		  solid !default;
+$bare-table-border-color: 		   #ccc !default;
+$bare-table-zebra-color:		#f5f5f5 !default;
+
+/* 
+   #table
+   ========================================================================== */
+
+/**
+ * Default styles for common table patterns.
+ *
+ * <table class="table">
+ *     <thead>
+ *         <tr>
+ *             <th></th>
+ *             <th></th>
+ *             <th></th>
+ *         </tr>
+ *     </thead>
+ *     <tbody>
+ *         <tr>
+ *             <td></td>
+ *             <td></td>
+ *             <td></td>
+ *         </tr>
+ *     </tbody>
+ * </table>
+ */
+
+.#{$bare-ns}table {
+
+	width: 100%;
+
+	th {
+		text-align: left;
+	}
+
+	th,
+	td {
+		padding: bareRem($bare-sp-xs);
+	}
+
+}
+
+/**
+ * @media: Increase the cell padding. 
+ */
+
+@media (min-width: bareEm($bare-bp-s)) {
+
+	th,
+	td {
+		padding: bareRem($bare-sp-s);
+	}	
+
+}
+
+// 
+// #table--cells   
+// ========================================================================== 
+
+@if ($bare-table--cells == true) {
+
+	.#{$bare-ns}table--cells {
+
+		th,
+		td {
+			border: $bare-table-border-width $bare-table-border-style $bare-table-border-color;
+		}
+
+	}
+
+} 
+
+// 
+// #table--rows   
+// ========================================================================== 
+
+@if ($bare-table--rows == true) {
+
+	.#{$bare-ns}table--rows {
+
+		th,
+		td {
+			border: 0;
+		}
+
+		td {
+			border-top: $bare-table-border-width $bare-table-border-style $bare-table-border-color;
+		}
+
+	}	
+
+} 
+
+// 
+// #table--fixed   
+// ========================================================================== 
+
+@if ($bare-table--fixed == true) {
+
+	.#{$bare-ns}table--fixed {
+		table-layout: fixed;
+	}
+}
+
+// 
+// #table--zebra   
+// ========================================================================== 
+
+@if ($bare-table--zebra == true) {
+
+	.#{$bare-ns}table--zebra {
+		> tbody {
+			> tr:nth-child(odd) {
+				> td {
+					background: $bare-table-zebra-color;
+				}
+			}
+		}
+	}
+
+}
