@@ -1,6 +1,6 @@
 #Table Object
 
-The `table` module creates common table patterns.
+The `table` object creates common table patterns.
 
 	<ul class="list-stack">
 		<li></li>
