@@ -2,11 +2,22 @@
 
 The `table` object creates common table patterns.
 
-	<ul class="list-stack">
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
+	<table class="table">
+		<thead>
+			<tr>
+				<th></th>
+				<th></th>
+				<th></th>
+			</tr>
+		</thead>	
+		<tbody>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
 
 ## Installation
 
