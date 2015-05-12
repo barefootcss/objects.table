@@ -64,7 +64,7 @@ $bare-table-zebra-color:		#f5f5f5 !default;
  * @media: Increase the cell padding. 
  */
 
-@media (min-width: bareEm($bare-bp-s)) {
+@media (min-width: bareMedia($bare-bp-s)) {
 
 	th,
 	td {
