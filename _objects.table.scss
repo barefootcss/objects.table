@@ -66,11 +66,12 @@ $bare-table-zebra-color:		#f5f5f5 !default;
 
 @media (min-width: bareMedia($bare-bp-s)) {
 
-	th,
-	td {
-		padding: bareRem($bare-sp-s);
-	}	
-
+	.#{$bare-ns}table {
+		th,
+		td {
+			padding: bareRem($bare-sp-s);
+		}	
+	}
 }
 
 // 
