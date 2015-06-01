@@ -23,7 +23,7 @@ The `table` object creates common table patterns.
 
 Install using Bower:
 
-	$ bower --save bare-table
+	$ bower install --save bare-table
 
 Import into project:
 
