@@ -2,7 +2,7 @@
 
 The `table` object creates common table patterns.
 
-	<table class="table">
+	<table class="o-table">
 		<thead>
 			<tr>
 				<th></th>
@@ -29,14 +29,13 @@ Import into project:
 
 	@import "bower_components/bare-table/objects.table";
 
-
 ## Options
 
 **table--cells**
 
 The `table--cells` option adds a border around table cells.
 
-	<table class="table table--cells">
+	<table class="o-table o-table--cells">
 		<thead>
 			<tr>
 				<th></th>
@@ -57,7 +56,7 @@ The `table--cells` option adds a border around table cells.
 
 The `table--rows` option adds a border above table rows.
 
-	<table class="table table--rows">
+	<table class="o-table o-table--rows">
 		<thead>
 			<tr>
 				<th></th>
@@ -78,7 +77,7 @@ The `table--rows` option adds a border above table rows.
 
 The `table--fixed` option makes columns equal in width.
 
-	<table class="table table--fixed">
+	<table class="o-table o-table--fixed">
 		<thead>
 			<tr>
 				<th></th>
@@ -99,7 +98,7 @@ The `table--fixed` option makes columns equal in width.
 	
 The `table--zebra` option applies zebra striping to table rows.
 
-	<table class="table table--zebra">
+	<table class="o-table o-table--zebra">
 		<thead>
 			<tr>
 				<th></th>
